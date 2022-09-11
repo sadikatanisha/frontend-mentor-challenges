@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: hsl(0, 100%, 74%);
+  background-image: url("./images/bg-intro-desktop.png");
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1200px;
+
+  min-height: 100vh;
+}
+.container > div {
+  flex: 1;
+  padding: 0 20px;
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 50px;
+}
+p {
+  font-size: 15px;
+  opacity: 0.8;
+  margin: 20px 0;
+}
+.box {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 6px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.box-blue {
+  background-color: hsl(248, 32%, 49%);
+  padding: 20px;
+}
+.box p {
+  margin: 0;
+}
+input {
+  font-family: "poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  display: block;
+  width: 100%;
+  padding: 15px 25px;
+  border-radius: 5px;
+  border: 1px solid hsl(246, 25%, 77%);
+}
+
+.form-control {
+  position: relative;
+  margin-bottom: 30px;
+}
+.form-control small {
+  position: absolute;
+  color: hsl(0, 100%, 74%);
+  font-weight: 600;
+  right: 0;
+  bottom: -24px;
+}
+.form-control.error input {
+  color: hsl(0, 100%, 74%);
+  border-color: hsl(0, 100%, 74%);
+}
+.form-control.error input::placeholder {
+  color: hsl(0, 100%, 74%);
+}
+
+.form-control img {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  opacity: 0;
+}
+.form-control.error img {
+  opacity: 1;
+}
+input:focus {
+  border: 1px solid hsl(249, 10%, 26%);
+  outline: none;
+}
+button {
+  background-color: hsl(154, 59%, 51%);
+  border: 1px solid hsl(154, 59%, 45%);
+  box-shadow: 0 2px hsl(154, 59%, 45%);
+  color: #fff;
+  font-family: "poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  display: block;
+  width: 100%;
+  padding: 15px 25px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+button:focus {
+  outline: none;
+}
+button:active {
+  box-shadow: 0 0 hsl(154, 59%, 45%);
+  transform: translateY(2px);
+}
+
+small {
+  display: block;
+  color: #bbb;
+  font-size: 12px;
+  font-weight: 500;
+  margin-top: 15px;
+}
+small a {
+  color: hsl(0, 100%, 74%);
+  text-decoration: none;
+  font-weight: 600;
+}
+.form-control small {
+  opacity: 0;
+}
+.form-control.error small {
+  opacity: 1;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  p {
+    text-align: center;
+  }
+  h1 {
+    text-align: center;
+  }
+}
+
+footer {
+  text-align: center;
+}
+footer a {
+  text-decoration: none;
+  color: hsl(249, 10%, 26%);
+}
