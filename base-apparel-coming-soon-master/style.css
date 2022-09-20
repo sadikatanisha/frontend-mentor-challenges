@@ -136,3 +136,8 @@ form.error input {
     font-size: 40px;
   }
 }
+
+.attribution {
+  text-align: center;
+  font-size: 10px;
+}
